@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: manjusv
 # @Date:   2018-01-02 19:18:42
-# @Last Modified by:   test
-# @Last Modified time: 2018-01-02 19:40:45
+# @Last Modified by:   Manju S V
+# @Last Modified time: 2018-01-02 19:55:24
 class ListNode:
 	def __init__(self, data):
 		self.val = data
@@ -12,6 +12,7 @@ class LinkedList:
 	def __init__(self):
 		self.head = None
 
+	# Function to reverse the linkedlist
 	def reverseList(self):
 		cur = self.head
 		prev = None
@@ -22,11 +23,13 @@ class LinkedList:
 			cur = fut
 		self.head = prev
 
+	# insert a new element at the beginning of a list
 	def push(self, new_data):
 		new_node = ListNode(new_data)
 		new_node.next = self.head
 		self.head = new_node
 
+	# prints the contents of a list
 	def printList(self):
 		temp = self.head
 		while(temp):
