@@ -2,7 +2,7 @@
 # @Author: manjusv
 # @Date:   2018-01-02 19:18:42
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-02 19:55:24
+# @Last Modified time: 2018-01-03 19:03:11
 class ListNode:
 	def __init__(self, data):
 		self.val = data
@@ -36,12 +36,12 @@ class LinkedList:
 			print temp.val,
 			temp = temp.next
 
+# create a linked list with user input
 llist = LinkedList()
-llist.push(5)
-llist.push(4)
-llist.push(3)
-llist.push(2)
-llist.push(1)
+n = input("Enter the number of elements in LinkedList : ")
+print "Enter elements : "
+for i in range(0, n):
+	llist.push(input())
 
 print "LinkedList before Reversing : ", llist.printList()
 llist.reverseList()
