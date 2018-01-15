@@ -2,7 +2,7 @@
 # @Author: Manju S V
 # @Date:   2018-01-15 18:35:31
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-15 18:53:28
+# @Last Modified time: 2018-01-15 19:25:05
 
 class Node():
 	# create a Node
@@ -30,7 +30,7 @@ class Solution:
 # create an obj of the class
 obj = Solution()
 
-# create a tree to do level order traversal
+# create a binary tree
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
