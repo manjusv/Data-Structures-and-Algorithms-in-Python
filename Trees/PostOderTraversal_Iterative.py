@@ -2,7 +2,7 @@
 # @Author: Manju S V
 # @Date:   2018-01-15 17:00:58
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-15 18:14:33
+# @Last Modified time: 2018-01-15 20:06:27
 
 class Node():
 	# create a Node
@@ -38,7 +38,7 @@ class Solution:
 # create an object of a class
 obj = Solution()
 
-# create a tree to do inorder traversal
+# create a binary tree
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
