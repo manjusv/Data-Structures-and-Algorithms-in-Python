@@ -6,6 +6,8 @@ I have tried not to make use of available python libraies which make many tasks 
 
 *   [Arrays](https://github.com/manjusv/DataStructuresInPython/tree/master/Arrays)
 *   [Binary Search](https://github.com/manjusv/DataStructuresInPython/tree/master/BinarySearch)
+*   [Sorting](https://github.com/manjusv/Data-Structures-and-Algorithms-in-Python/tree/master/Sorting)
+	* [Merge Sort](https://github.com/manjusv/Data-Structures-and-Algorithms-in-Python/blob/master/Sorting/MergeSort.py)
 *   [Strings](https://github.com/manjusv/DataStructuresInPython/tree/master/Strings)
 *   [Stack and Queue](https://github.com/manjusv/DataStructuresInPython/tree/master/Stacks)
 *   [Two Pointers](https://github.com/manjusv/DataStructuresInPython/tree/master/TwoPointers)
