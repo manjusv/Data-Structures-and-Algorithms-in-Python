@@ -2,7 +2,7 @@
 # @Author: Manju S V
 # @Date:   2018-01-21 01:30:41
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-21 02:15:49
+# @Last Modified time: 2018-02-08 18:41:21
 
 # Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
@@ -31,9 +31,10 @@ class Solution:
 obj = Solution()
 
 # Take input from user
+A = []
 n = input("Enter how many elements in array : ")
 print "Enter elements of array : "
-for i range(0, n):
+for i in range(0, n):
 	A.append(input())
 	
 x = input("Enter value of x : ")

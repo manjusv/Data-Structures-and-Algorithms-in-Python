@@ -2,7 +2,7 @@
 # @Author: Manju S V
 # @Date:   2018-01-21 01:10:41
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-21 01:55:49
+# @Last Modified time: 2018-02-08 17:35:35
 
 # Given a sorted array of integers, find the starting and ending position of a given target value.
 
@@ -56,9 +56,10 @@ class Solution:
 obj = Solution()
 
 # Take input from user
+A = []
 n = input("Enter how many elements in array : ")
 print "Enter elements of array : "
-for i range(0, n):
+for i in range(0, n):
 	A.append(input())
 	
 x = input("Enter value of x : ")
