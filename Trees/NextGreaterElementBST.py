@@ -2,10 +2,11 @@
 # @Author: Manju S V
 # @Date:   2018-01-22 00:40:03
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-22 01:06:26
+# @Last Modified time: 2018-04-06 18:34:17
 
 # Given a BST node, return the node which has value just greater than the given node.
 # If there are no successor in the tree, return NULL
+
 
 class Node():
     # create a Node
@@ -14,36 +15,37 @@ class Node():
         self.left = None
         self.right = None
 
+
 class Solution:
     # Function to get inorder traversal of BST
     def inorderTraversal(self, root):
         # create an empty stack
         stack = []
-        
+
         # result to return
         result = []
-        
+
         # assign the root to cur
         cur = root
-        
+
         while True:
             if cur is not None:
                 # push node to stack
                 stack.append(cur)
                 cur = cur.left
-                
+
             else:
                 if len(stack) > 0:
                     # pop a node from stack
                     popped_node = stack.pop()
                     result.append(popped_node)
-                    
+
                     cur = popped_node.right
                 else:
                     break
-        
+
         return result
-        
+
     # @param A : root node of tree
     # @param x : integer
     # @return the root node in the tree
@@ -56,6 +58,7 @@ class Solution:
             if inorder_traversal[i].val == x and i < (n - 1):
                 return inorder_traversal[i + 1].val
         return None
+
 
 # create an object of the class
 obj = Solution()

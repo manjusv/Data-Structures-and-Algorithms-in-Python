@@ -2,9 +2,10 @@
 # @Author: Manju S V
 # @Date:   2018-01-21 19:20:08
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-21 19:37:17
+# @Last Modified time: 2018-04-06 18:19:08
 
 # Compute and return the square root of x. If x is not a perfect square, return floor(sqrt(x))
+
 
 class Solution:
     # @param x : integer
@@ -16,7 +17,7 @@ class Solution:
         high = x
         result = 0
         while low <= high:
-        	# Find mid
+            # Find mid
             mid = low + (high - low) / 2
             # if mid is the sqrt, return mid
             if mid * mid == x:
@@ -29,6 +30,7 @@ class Solution:
             elif mid * mid > x:
                 high = mid - 1
         return result
+
 
 # create an object of the class
 obj = Solution()

@@ -2,20 +2,21 @@
 # @Author: Manju S V
 # @Date:   2018-01-10 19:20:55
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-10 20:00:55
+# @Last Modified time: 2018-04-06 18:35:44
 
 # Program to remove all instances of an element from array, return number of elements left in the array
+
 
 class Solution:
     # @param A : list of integers
     # @param val : integer
     # @return an integer
     def removeElement(self, A, val):
-    	# two pointers i and j from start and end
+        # two pointers i and j from start and end
         i = 0
         j = len(A) - 1
         while i <= j:
-        	# when i and j point to same element
+            # when i and j point to same element
             if i == j and A[i] == val:
                 del A[i]
                 j -= 1
@@ -38,6 +39,7 @@ class Solution:
                 j -= 1
         # return the list after all instances of element are removed
         return A
+
 
 # create an obj of the class
 obj = Solution()

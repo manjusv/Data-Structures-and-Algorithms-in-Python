@@ -2,12 +2,13 @@
 # @Author: Manju S V
 # @Date:   2018-01-21 01:10:41
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-02-08 17:35:35
+# @Last Modified time: 2018-04-06 18:18:34
 
 # Given a sorted array of integers, find the starting and ending position of a given target value.
 
+
 class Solution:
-	# Function to get the starting index of element x in array A
+    # Function to get the starting index of element x in array A
     def getStartIndex(self, A, low, high, x):
         if low <= high:
             mid = low + (high - low) / 2
@@ -23,8 +24,8 @@ class Solution:
             else:
                 return -1
         return -1
-            
-	# Function to get ending index of element x in array A
+
+    # Function to get ending index of element x in array A
     def getEndIndex(self, A, low, high, x):
         if low <= high:
             mid = low + (high - low) / 2
@@ -40,8 +41,7 @@ class Solution:
             else:
                 return -1
         return -1
-            
-                
+
     # @param A : tuple of integers
     # @param x : integer
     # @return a list of integers
@@ -51,7 +51,8 @@ class Solution:
         first = self.getStartIndex(A, low, high, x)
         last = self.getEndIndex(A, low, high, x)
         return [first, last]
-		
+
+
 # create an object of class
 obj = Solution()
 
@@ -60,7 +61,7 @@ A = []
 n = input("Enter how many elements in array : ")
 print "Enter elements of array : "
 for i in range(0, n):
-	A.append(input())
-	
+    A.append(input())
+
 x = input("Enter value of x : ")
 print "The starting and Ending index of given element in A : ", obj.searchRange(A, x)

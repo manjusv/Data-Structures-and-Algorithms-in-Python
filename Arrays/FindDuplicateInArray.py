@@ -2,9 +2,10 @@
 # @Author: Manju S V
 # @Date:   2018-01-13 17:20:41
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-13 18:07:41
+# @Last Modified time: 2018-04-06 18:17:45
 
 # Program to find the duplicate element in a given array, if multiple duplicates then return any one
+
 
 class Solution:
     # @param A : list of integers
@@ -19,6 +20,7 @@ class Solution:
             else:
                 # if this is the first duplicate, return
                 return abs(A[i])
+
 
 # create an obj of the class
 obj = Solution()

@@ -2,12 +2,13 @@
 # @Author: Manju S V
 # @Date:   2018-01-21 01:30:41
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-02-08 18:41:21
+# @Last Modified time: 2018-04-06 18:18:42
 
 # Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
+
 class Solution:
-	# Function to get Insert index or index at which element is found
+    # Function to get Insert index or index at which element is found
     def getInsertIndex(self, A, low, high, x):
         while low <= high:
             mid = low + (high - low) / 2
@@ -18,7 +19,7 @@ class Solution:
             elif x > A[mid]:
                 low = mid + 1
         return low
-            
+
     # @param A : list of integers
     # @param x : integer
     # @return an integer
@@ -26,7 +27,8 @@ class Solution:
         low = 0
         high = len(A) - 1
         return self.getInsertIndex(A, low, high, x)
-		
+
+
 # create an object of the class
 obj = Solution()
 
@@ -35,7 +37,7 @@ A = []
 n = input("Enter how many elements in array : ")
 print "Enter elements of array : "
 for i in range(0, n):
-	A.append(input())
-	
+    A.append(input())
+
 x = input("Enter value of x : ")
 print "The index(found or to be inserted at) of given element in A : ", obj.searchInsert(A, x)

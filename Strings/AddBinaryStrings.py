@@ -2,9 +2,10 @@
 # @Author: Manju S V
 # @Date:   2018-01-18 01:10:20
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-18 01:51:17
+# @Last Modified time: 2018-04-06 18:28:59
 
 # Given two binary strings, return their sum (also a binary string)
+
 
 class Solution:
     # Function to return sum and carry
@@ -25,7 +26,7 @@ class Solution:
             return [0, 1]
         else:
             return [1, 1]
-            
+
     # @param A : string
     # @param B : string
     # @return a strings
@@ -55,6 +56,7 @@ class Solution:
             res_str = res_str + str(carry)
         # return the result
         return res_str[::-1]
+
 
 # create an object of the class
 obj = Solution()

@@ -2,9 +2,10 @@
 # @Author: Manju S V
 # @Date:   2018-01-06 12:30:53
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-06 13:08:02
+# @Last Modified time: 2018-04-06 18:28:44
 
 # Program to check if the string contains valid set of brackets
+
 
 class Solution:
     # check if opening and closing characters match
@@ -21,16 +22,16 @@ class Solution:
     # pop an element from stack
     def pop(self, stack):
         del stack[-1]
-    
+
     # check if the stack is empty
     def isEmpty(self, stack):
         return len(stack) == 0
-        
+
     # @param A : string
     # @return True or False
     def isValid(self, A):
         stack = []
-        
+
         # push all the items to the stack
         for i in range(0, len(A)):
             # push to stack if it is opening item
@@ -47,11 +48,12 @@ class Solution:
                     return False
                 # once there is a match, pop an elemnt from stack
                 self.pop(stack)
-        
+
         # check if stack is empty, if yes return True
         if self.isEmpty(stack):
             return True
         return False
+
 
 # create an object of the class
 obj = Solution()

@@ -2,27 +2,29 @@
 # @Author: Manju S V
 # @Date:   2018-01-16 00:50:09
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-01-16 01:21:03
+# @Last Modified time: 2018-04-06 18:34:26
 
 # Program to find if there exists a path from root to leaf, such that sum of elements in path equals given sum
 
+
 class Node():
-	# create a Node
-	def __init__(self, data):
-		self.val = data
-		self.left = None
-		self.right = None
+    # create a Node
+    def __init__(self, data):
+        self.val = data
+        self.left = None
+        self.right = None
+
 
 class Solution:
     # @param root : root node of tree
     # @param sum1 : integer
     # @return an integer
     def hasPathSum(self, root, sum1):
-    	# if tree is empty and sum given is 0 then return true
+        # if tree is empty and sum given is 0 then return true
         if root is None:
             if sum1 == 0:
                 return True
-        
+
         # Initialize result as True
         res = 0
         # calculate subsum
@@ -35,8 +37,9 @@ class Solution:
             res = res or self.hasPathSum(root.left, subsum)
         if root.right is not None:
             res = res or self.hasPathSum(root.right, subsum)
-        
+
         return res
+
 
 # create an obj of the class
 obj = Solution()
@@ -52,6 +55,6 @@ root.right.left = Node(6)
 sum1 = input("Enter the sum : ")
 
 if obj.hasPathSum(root, sum1):
-	print "There is a path with given sum"
+    print "There is a path with given sum"
 else:
-	print "There is no path with given sum"
+    print "There is no path with given sum"

@@ -2,12 +2,13 @@
 # @Author: Manju S V
 # @Date:   2018-04-06 16:33:14
 # @Last Modified by:   Manju S V
-# @Last Modified time: 2018-04-06 17:30:44
+# @Last Modified time: 2018-04-06 18:29:20
 
 # The count-and-say sequence is the sequence of integers beginning as follows
 # 1, 11, 21, 1211, 111221, ...
 # 1 is read off as one 1 or 11, 11 is read off as two 1s or 21, 21 is read off as one 2, then one 1 or 1211.
 # Given an integer n, generate the nth sequence.
+
 
 class Solution:
     # Function to generate next sequence
